@@ -1,0 +1,613 @@
+/*
+===============================================
+BASE STYLES
+===============================================
+*/
+
+html {
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  font-size: 1em;
+  margin: 0;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  -webkit-border-radius:  0.25em;
+  -moz-border-radius:     0.25em;
+   border-radius:         0.25em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+   box-sizing:        border-box;
+}
+
+select {
+  width: 100%;
+  -webkit-appearance: menulist-button;
+  font-size: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+   box-sizing:        border-box;
+  border: 1px solid #bbb;
+  margin: 0;
+  height: 2.25em;
+  -webkit-border-radius:  0.25em;
+  -moz-border-radius:     0.25em;
+   border-radius:         0.25em;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.padding-fix {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+   box-sizing:        border-box;
+}
+
+.layout-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.layout-list li {
+  float: left;
+}
+
+
+/*
+===============================================
+SCAFFOLDING
+===============================================
+*/
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.left-column,
+.right-column {
+  width: 47%;
+}
+
+.left-column {
+  float: left;
+  margin-right: 6%;
+}
+
+.right-column {
+  float: right;
+}
+
+
+/*
+===============================================
+SITE NAV
+===============================================
+*/
+
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-spacer {
+  width: 100%;
+  height: 1em;
+  background: rgba(255,255,255,0.4);
+}
+
+.nav-content {
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.nav-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em 2em;
+}
+
+.nav-bar .logo {
+  float: left;
+}
+
+.nav-bar .buttons {
+  float: right;
+}
+
+.nav-bar .buttons li {
+  margin-left: 0.5em;
+}
+
+.nav-bar .buttons a {
+  display: block;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  -webkit-border-radius:  50%;
+  -moz-border-radius:     50%;
+   border-radius:         50%;
+   background: #ccc;
+}
+
+.nav-bar .buttons .donate a {
+  width: 7em;
+  -webkit-border-radius:  1em;
+  -moz-border-radius:     1em;
+   border-radius:         1em;
+   background: #444;
+   color: #fff;
+   font-weight: bold;
+}
+
+.donate-button-text {
+  position: relative;
+  top: 0.35em;
+  text-transform: uppercase;
+}
+
+
+/*
+===============================================
+META AREA
+===============================================
+*/
+
+.meta {
+  background: #f7f7f7;
+  -webkit-border-radius:  0.25em;
+  -moz-border-radius:     0.25em;
+   border-radius:         0.25em;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+.title {
+  padding: 1.5em 2em 0 2em;
+}
+
+.meta-content {
+  padding: 0 2em 1.5em 2em;
+}
+
+.title h1 {
+  margin: 0;
+}
+
+.title .info {
+  font-size: 0.85em;
+  color: #666;
+}
+
+.meta-content {
+  margin-top: 1.5em;
+}
+
+.meta-content .photo,
+.meta-content .stats {
+  float: left;
+}
+
+.meta-content .photo {
+  width: 30%;
+  margin-right: 4%;
+}
+
+.meta-content .photo img {
+  width: 140px;
+}
+
+.meta-content .stats {
+  width: 66%;
+}
+
+.meta-content .stats-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.meta-content .stats-list li {
+  text-align: right;
+  margin-bottom: 1em;
+}
+
+.meta-content .stats-list h3 {
+  font-size: 1.75em;
+  line-height: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.meta-content .stats-list .stat-label {
+  font-size: 0.85em;
+  color: #666;
+}
+
+.boom-counter {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 1.5em 2em;
+}
+
+.boom-counter-base,
+.boom-counter-fill {
+  -webkit-border-radius:  0.75em;
+  -moz-border-radius:     0.75em;
+   border-radius:         0.75em;
+}
+
+.boom-counter-base {
+  background: #eee;
+  height: 1.5em;
+  width: 100%;
+  border: 1px solid #ddd;
+  -webkit-border-radius:  0.75em;
+  -moz-border-radius:     0.75em;
+   border-radius:         0.75em;
+   overflow: hidden;
+}
+
+.boom-counter-fill {
+  background: #66A344;
+  width: 50%;
+  height: 100%;
+}
+
+.boom-counter-label {
+  display: block;
+  margin-bottom: 0.35em;
+}
+
+.boom-counter-label .prefix {
+  color: #666;
+}
+
+.boom-counter-label .figures {
+  font-weight: bold;
+}
+
+.spending-categories {
+  padding: 1.5em 2em;
+}
+
+.spending-categories h4 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.spending-categories p {
+  color: #666;
+  font-size: 0.85em;
+  line-height: 1.4em;
+  margin-top: 0;
+}
+
+.categories {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories .cost,
+.categories .purchases {
+  float: left;
+}
+
+.categories .cost {
+  width: 30%;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.categories li {
+  padding: 0.5em 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.categories li:nth-child(odd) {
+  background: #eee;
+}
+
+.categories li:last-child {
+  border-bottom: none;
+}
+
+.categories .purchases {
+  width: 70%;
+  text-align: right;
+}
+
+.categories .purchases > div {
+  margin-bottom: 0.25em;
+  font-size: 0.85em;
+  color: #222;
+}
+
+.categories .purchases .or {
+  color: #999;
+}
+
+.categories .purchases .or:after {
+  content: '...';
+}
+
+/*
+===============================================
+FORM
+===============================================
+*/
+
+.field-set .number {
+  display: inline-block;
+  position: relative;
+  width: 1.75em;
+  height: 1.75em;
+  top: -0.15em;
+  margin-right: 0.35em;
+  font-size: 0.75em;
+  text-align: center;
+  -webkit-border-radius:  50%;
+  -moz-border-radius:     50%;
+   border-radius:         50%;
+  color: #fff;
+  background: #333;
+}
+
+.field-set .number-inner {
+  display: inline-block;
+  margin-top: 0.25em;
+}
+
+.button-set .button-row {
+  margin-bottom: 2%;
+}
+
+.button-set .button-row > div {
+  float: left;
+}
+
+.button-row.three-up > div,
+.button-row.one-up-field > div {
+  width: 32%;
+  margin-right: 2%;
+}
+
+.button-row.three-up > div:last-child {
+  margin-right: 0;
+}
+
+.button-row.one-up-field > div:last-child {
+  width: 66%;
+  margin: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em;
+  text-align: center;
+  background: rgb(234,234,234); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(234,234,234,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(234,234,234,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(234,234,234,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+  color: #000;
+  border: 1px solid #bbb;
+  -webkit-border-radius:  0.25em;
+  -moz-border-radius:     0.25em;
+   border-radius:         0.25em;
+  -webkit-box-sizing:     border-box;
+  -moz-box-sizing:        border-box;
+   box-sizing:            border-box;
+}
+
+.button-row .button {
+  width: 100%;
+}
+
+.field-set {
+  margin-top: 1.75em;
+  padding-top: 1.75em;
+}
+
+.field-set:first-child {
+  margin-top: 0;
+  border-top: none;
+  padding-top: 0;
+}
+
+.field-set h2 {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+  font-size: 1.3em;
+}
+
+.field-set:first-child h2 {
+  margin-top: 0;
+}
+
+.field-set p {
+  margin-top: 0;
+  color: #666;
+  font-size: 0.85em;
+  line-height: 1.4em;
+}
+
+.field-row {
+  margin-bottom: 2.5%;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 0.35em;
+  color: #444;
+}
+
+.first-name,
+.last-name,
+.address,
+.city,
+.state,
+.zip,
+.email,
+.phone,
+.expiration-month,
+.expiration-year,
+.security-code {
+  float: left;
+}
+
+.first-name,
+.last-name {
+  width: 49%;
+}
+
+.first-name,
+.city,
+.state,
+.expiration-month,
+.expiration-year {
+  margin-right: 2%;
+}
+
+.address {
+  width: 100%;
+}
+
+.city,
+.state,
+.zip,
+.phone,
+.expiration-month,
+.expiration-year,
+.security-code {
+  width: 32%;
+}
+
+.email {
+  width: 66%;
+  margin-right: 2%;
+}
+
+.card-icons {
+  float: left;
+}
+
+.card-icons li {
+  margin-right: 0.5em;
+}
+
+.use-paypal {
+  float: right;
+  position: relative;
+  top: -0.5em;
+}
+
+.use-paypal img {
+  width: 3.75em;
+  display: inline-block;
+  position: relative;
+  top: 0.25em;
+}
+
+.security-code-info {
+  display: block;
+  font-size: 0.85em;
+  margin-top: 0.35em;
+}
+
+.submit-container {
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+.button.submit {
+  background: #333;
+  border-color: #222;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 0.75em 1.5em;
+  -webkit-border-radius:  3em;
+  -moz-border-radius:     3em;
+   border-radius:         3em;
+}
+
+
+/*
+===============================================
+DISCLAIMERS
+===============================================
+*/
+
+.disclaimers {
+  width: 100%;
+  clear: both;
+  color: #666;
+  border-top: 1px solid #ccc;
+  padding-top: 2em;
+}
+
+.disclaimers .certification-lead-in {
+  color: #222;
+  font-weight: bold;
+}
+
+.disclaimers .certification ol {
+  font-size: 0.85em;
+}
+
+.disclaimers .certification li {
+  line-height: 1.4em;
+  margin-bottom: 1em;
+}
+
+.disclaimers .asterisk-funding {
+  font-size: 0.85em;
+  border-top: 1px solid #ccc;
+  margin-top: 2em;
+  padding-top: 2em;
+}
+
+.disclaimers .asterisk-funding a,
+.disclaimers .asterisk-funding p {
+  float: left;
+}
+
+.disclaimers .asterisk-funding a {
+  position: absolute;
+  margin-left: 1.5em;
+  color: #222;
+  font-weight: bold;
+}
+
+.disclaimers .asterisk-funding p {
+  margin: 0 0 0 2.75em;
+  line-height: 1.4em;
+}
