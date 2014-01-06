@@ -968,6 +968,7 @@ MEDIA QUERIES
   .title h1 {
     font-size: 1.4em;
     padding-top: 0.2em;
+    padding-left: 0.2em;
   }
 
   .meta-content {
