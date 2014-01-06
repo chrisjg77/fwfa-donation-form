@@ -1095,6 +1095,8 @@ MEDIA QUERIES
 
   .meta { border: 1px solid #ddd; }
 
+  .meta-content .stats { padding-left: 0.75em; }
+
   .meta-content .stats-list li {
     text-align: left;
     margin-bottom: 1em;
