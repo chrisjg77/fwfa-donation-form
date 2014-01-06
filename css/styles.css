@@ -273,11 +273,11 @@ META AREA
 */
 
 .meta {
+  width: 101%;
   background: #fff;
   -webkit-border-radius:  0.25em;
   -moz-border-radius:     0.25em;
   border-radius:         0.25em;
-  border: 1px solid #ddd;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.05);
 }
 
@@ -344,7 +344,6 @@ META AREA
 }
 
 .meta-content .stats {
-  width: 40%;
   padding-top: 1.7em;
 }
 
@@ -357,7 +356,6 @@ META AREA
 .meta-content .stats-list li {
   text-align: left;
   margin-bottom: 1em;
-  padding-left: 10%;
 }
 
 .meta-content .stats-list h3 {
@@ -980,6 +978,7 @@ MEDIA QUERIES
   .meta-content .stats {
     width: 100%;
     padding-top: 1em;
+    padding-bottom: 1em;
   }
 
   .meta-content .stats .stats-list li {
@@ -1088,6 +1087,18 @@ MEDIA QUERIES
 
   .disclaimers .asterisk-funding {
     margin-top: 0;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .meta { border: 1px solid #ddd; }
+
+  .meta-content .stats-list li {
+    text-align: left;
+    margin-bottom: 1em;
+    padding-left: 10%;
   }
 
 }
