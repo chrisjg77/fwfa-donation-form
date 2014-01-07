@@ -108,4 +108,17 @@ $(function() {
     e.stopPropagation();
   });
 
+
+    $('.boom-counter-kickoff-overlay').click(function() {
+
+      $('.kickoff-info').addClass('open');
+
+    });
+
+    $('.kickoff-info i').click(function() {
+
+      $('.kickoff-info').removeClass('open');
+
+    });
+
 });
