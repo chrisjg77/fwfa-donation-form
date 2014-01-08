@@ -98,8 +98,9 @@ HEADER
   border-bottom: 1px solid #d1d7e2;
   text-align: center;
   margin: 0;
+  box-shadow: 0 1px 0 #fff;
+  background: #f2f4f7;
 }
-
 
 header.wrapper { padding: 0; }
 
@@ -108,7 +109,6 @@ header .inner a img {
   height: 65px;
   margin-top: 15px;
 }
-
 
 #primary-links ul li { display: none; }
 #primary-links ul li.last { display: block; }
@@ -269,11 +269,6 @@ SITE NAV
 
 .nav-spacer {
   display: none;
-}
-
-.nav-content {
-  width: 100%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .nav-wrapper {
@@ -1191,7 +1186,8 @@ MEDIA QUERIES
     padding-left: 10%;
   }
 
-    .nav-bar {
+  /*
+  .nav-bar {
     position: fixed;
     width: 100%;
   }
@@ -1258,5 +1254,6 @@ MEDIA QUERIES
 
   .span3 { width: 30%; float: left; }
   .span9 { width: 70%; float: left; }
+  */
 
 }
