@@ -199,6 +199,23 @@ BUTTONS
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a6287', endColorstr='#4488ab',GradientType=0 ); /* IE6-9 */
 }
 
+.button.use-paypal {
+  color: #000;
+  background-color: #e8e8e8;
+  background-image: -webkit-linear-gradient(top,#e8e8e8,#fcfcfc);
+  background-image: linear-gradient(to bottom,#e8e8e8,#fcfcfc);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
+}
+
+
+.button.use-paypal:hover {
+  color: #000;
+  background-color: #fcfcfc;
+  background-image: -webkit-linear-gradient(top,#fcfcfc,#e8e8e8);
+  background-image: linear-gradient(to bottom,#fcfcfc,#e8e8e8);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+}
+
 .button {
   display: inline-block;
   padding: 0.75em;
